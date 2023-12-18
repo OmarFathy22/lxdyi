@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body{
+  /* background-color: #010108; */
+  background-color: #010108;
+}
+ .grad{
+  background-image: linear-gradient(to right ,rgba(73, 46, 136, 1), rgba(160, 45, 111, 1) );
+ }
+ .gradient-text {
+  background: linear-gradient(to right,  rgba(73, 46, 136, 1),rgba(160, 45, 111, 1));
+  -webkit-background-clip: text; /* For compatibility with older browsers */
+  color: transparent; /* Hide the actual text */
+}
+.gradient-border {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #e40bcb, #753a88);
+  
+}
+.gradient-border-hover {
+
+}
+.gradient-border-hover:hover {
+  border: 2px solid;
+  border-image-slice: 1;
+  animation: gradientAnimation 0.7s infinite;
+  border-radius: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    border-image-source: linear-gradient(to right, #e40bcb, #753a88);
+    transform: rotate(0deg);
+  }
+  50% {
+    border-image-source: linear-gradient(to right, #753a88, #e40bcb);
+    transform: rotate(180deg);
+  }
+  100% {
+    border-image-source: linear-gradient(to right, #e40bcb, #753a88);
+    transform: rotate(360deg);
+  }
+}
+:root{
+  --primary: #E4523D;
+  --secondary: #254060;
+  --tertiary:#DAEBFF;
+}
+.borderr{
+  border: 1px solid red;
+}
+
+/*==================== Navbar styles ========================*/
+ /*nabar animation*/
+  .list_animation{
+    animation: animate-list 0.5s linear  1  forwards;
+  }
+ @keyframes animate-list {
+    0% {
+      border: 2px solid transparent;
+    }
+    100% {
+      border: 2px solid var(--primary);
+    }
+ }
+ /*==================== react-slick styles ========================*/
+ .slick-prev:before, .slick-next:before{
+    display: none;
+ }

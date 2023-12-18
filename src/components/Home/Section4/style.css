@@ -1,0 +1,10 @@
+.sectionBg{
+  background-image: '/Image.png';
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  background-position: right;
+  background-position: 20px;
+  /* background-color: red; */
+  /* z-index: 10000; */
+}

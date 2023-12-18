@@ -1,0 +1,47 @@
+.section1 {
+  width: 430px;
+  height: 293px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+.section2 {
+  width: 430px;
+  height: 293px;
+  transform: translateY(-50px);
+  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button {
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.87); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 48.05%, rgba(0, 0, 0, 0.20) 48.9%), linear-gradient(180deg, rgba(49, 58, 91, 0.00) -19.57%, #313A5B 98.8%, rgba(49, 58, 91, 0.22) 130.43%);
+  box-shadow: 0px 14px 20px 0px 30px rgba(42, 51, 83, 0.80);
+  display: flex;
+  width: 183px;
+  padding: 13px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 50px;
+}
+
+.AllServicesButton {
+  display: flex;
+  width: 183px;
+  height: 49px;
+  padding: 13px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 38px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 48.05%, rgba(0, 0, 0, 0.20) 48.9%), linear-gradient(180deg, rgba(11, 234, 222, 0.58) -19.57%, #313A5B 98.8%, rgba(11, 234, 222, 0.58) 130.43%);
+  box-shadow: 0px 4px 35px 0px rgba(11, 234, 222, 0.58);
+}
